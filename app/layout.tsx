@@ -41,7 +41,7 @@ export default function RootLayout({
                 geistMono.variable,
                 dmSansHeading.variable,
             )}>
-            <body className="min-h-full flex flex-col items-center ">
+            <body className="min-h-full flex flex-col items-center">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"

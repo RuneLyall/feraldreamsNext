@@ -1,3 +1,8 @@
+"use client";
+import dynamic from "next/dynamic";
+const QuoteCard = dynamic(() => import("@/components/QuoteCard"), {
+    ssr: false,
+});
 export default function Home() {
     return (
         <main className="max-w-7xl w-full">
@@ -37,6 +42,9 @@ export default function Home() {
                     In the back, well, only those that know me unlock the space
                     within there.
                 </p>
+                <div>
+                    <QuoteCard />
+                </div>
             </div>
         </main>
     );
